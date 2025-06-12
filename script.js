@@ -45,10 +45,6 @@ function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
 
-function resetTimer() {
-  clearInterval(timerInterval);
-  time = 25 * 60;
-  updateTimer();
-}
+//get out hardcoded thingy!
 
 updateTimer();

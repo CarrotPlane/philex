@@ -1,5 +1,21 @@
 let time = 25 * 60;
 let timerInterval;
+let selectedTime = 25; // default selection
+let time = selectedTime * 60;
+
+function changeTime(delta) {
+  selectedTime += delta;
+  if (selectedTime < 5) selectedTime = 5;
+  if (selectedTime > 120) selectedTime = 120;
+  document.getElementById("time-display").textContent = selectedTime;
+  resetTimer();
+}
+
+function resetTimer() {
+  clearInterval(timerInterval);
+  time = selectedTime * 60;
+  updateTimer();
+}
 
 function updateTimer() {
   const minutes = String(Math.floor(time / 60)).padStart(2, '0');

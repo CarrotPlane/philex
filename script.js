@@ -20,6 +20,10 @@ function startTimer() {
   }, 1000);
 }
 
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
+}
+
 function resetTimer() {
   clearInterval(timerInterval);
   time = 25 * 60;

@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: #f8f8f8;
+  font-family: Georgia, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #222;
+}
+
+#app {
+  text-align: center;
+}
+
+#timer {
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

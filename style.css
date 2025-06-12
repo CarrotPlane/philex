@@ -28,3 +28,14 @@ button {
   border: none;
   cursor: pointer;
 }
+
+.dark {
+  background: #111;
+  color: #eee;
+}
+
+.dark button {
+  background: #eee;
+  color: #111;
+}
+

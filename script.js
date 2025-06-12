@@ -8,10 +8,12 @@ function changeTime(delta) {
   if (selectedTime < 5) selectedTime = 5;
   if (selectedTime > 120) selectedTime = 120;
   document.getElementById("time-display").textContent = selectedTime;
+  clearInterval(timerInterval); 
+  resetTimer(); // DOES THIS WORK??
   console.log("Selected Time:", selectedTime);
-  console.log("Time (seconds):", time);
-  resetTimer();
+  console.log("Time (seconds):", time); // please
 }
+
 
 function resetTimer() {
   clearInterval(timerInterval);

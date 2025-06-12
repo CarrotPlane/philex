@@ -1,7 +1,7 @@
-let time = 25 * 60;
-let timerInterval;
-let selectedTime = 25; // default selection
+let selectedTime = 25;
 let time = selectedTime * 60;
+let timerInterval;
+
 
 function changeTime(delta) {
   selectedTime += delta;

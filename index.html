@@ -10,13 +10,18 @@
   <div id="app">
     <h1>philex</h1>
     <p id="quote">“Time is the wisest counselor of all.”</p>
+    <div id="time-selector">
+      <button onclick="changeTime(-5)">←</button>
+      <span id="time-display">25</span> min
+      <button onclick="changeTime(5)">→</button>
+    </div>
     <div id="timer">25:00</div>
     <div id="controls">
       <button onclick="startTimer()">Start</button>
       <button onclick="resetTimer()">Reset</button>
     </div>
     <div id="darkmode">
-      <button onclick="toggleDarkMode()">Dark Mode</button>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </div>
   </div>
   <script src="script.js"></script>

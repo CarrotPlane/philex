@@ -30,8 +30,8 @@ button {
 }
 
 .dark {
-  background: #111 !important;
-  color: #eee !important;
+  background: #111;
+  color: #eee;
 }
 
 .dark-mode button {

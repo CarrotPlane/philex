@@ -10,15 +10,12 @@ function changeTime(delta) {
   document.getElementById("time-display").textContent = selectedTime;
   clearInterval(timerInterval); 
   resetTimer(); // DOES THIS WORK??
-  console.log("Selected Time:", selectedTime);
-  console.log("Time (seconds):", time); // please
 }
 
 
 function resetTimer() {
   clearInterval(timerInterval);
   time = selectedTime * 60;
-  console.log("resetTimer called. Time now set to:", time);
   updateTimer();
 }
 

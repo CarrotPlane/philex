@@ -30,14 +30,16 @@ button {
 }
 
 .dark {
-  background: #111;
-  color: #eee;
+  background: #111 !important;
+  color: #eee !important;
 }
 
-.dark button {
-  background: #eee;
-  color: #111;
+.dark-mode button {
+  background: #eee !important;
+  color: #111 !important;
+  border: none;
 }
+
 
 #time-selector {
   margin-top: 1rem;

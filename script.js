@@ -6,7 +6,7 @@ let timerInterval;
 function changeTime(delta) {
   selectedTime += delta;
   if (selectedTime < 5) selectedTime = 5;
-  if (selectedTime > 120) selectedTime = 120;
+  if (selectedTime > 180) selectedTime = 180;
   document.getElementById("time-display").textContent = selectedTime;
   clearInterval(timerInterval); 
   resetTimer(); // DOES THIS WORK??
@@ -41,7 +41,5 @@ function startTimer() {
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
 }
-
-//get out hardcoded thingy!
 
 updateTimer();
